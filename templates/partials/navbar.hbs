@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+     <!-- navbar section -->
+    <nav class="navbar">
+        <div class="navContainer">
+            <div>
+            <span id="navUser">
+                {{name}}
+            </span>
+            </div>
+            
+            <a href="/" id="navLogo">General Store</a>
+            <div class="navToggle" id="mobileMenu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navMenu">
+                <li class="navItem">
+                    <a href="/" class="navLinks" id="home">Home</a>
+                </li>
+                <li class="navItem">
+                    <a href="/register" class="navLinks" id="home">Register</a>
+                </li>
+                <li class="navItem">
+                    <a href="#about" class="navLinks" id="about">About us</a>
+                </li>
+                <li class="navItem">
+                    <a href="#service" class="navLinks" id="service">Services</a>
+                </li>
+                <li class="navBtn">
+                    <a href="/login" class="button" id="signUp">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        const mobileMenu = document.querySelector('#mobileMenu')
+        const navMenu = document.querySelector('.navMenu')
+
+        mobileMenu.addEventListener('click',()=>{
+            mobileMenu.classList.toggle('is-active')
+            navMenu.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
