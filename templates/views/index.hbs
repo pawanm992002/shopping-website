@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
     <title>General Store</title>
 </head>
 <body>
@@ -19,43 +23,83 @@
                     <span class= "categorieshead">Categories</span>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat1</a>
+                    <a href="/mobiles" class= "categoriesItem">Mobiles and accessories</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat2</a>
+                    <a href="/electronics" class= "categoriesItem">Electronics appliances</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat3</a>
+                    <a href="/fashion" class= "categoriesItem">Fashion trends</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat4</a>
+                    <a href="/home" class= "categoriesItem">Home products</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat5</a>
+                    <a href="/grocery" class= "categoriesItem">Grocery items</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat6</a>
+                    <a href="/beauty" class= "categoriesItem">Beauty products</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat7</a>
+                    <a href="/toys" class= "categoriesItem">Baby products and toys</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat8</a>
+                    <a href="/study" class= "categoriesItem">Study material</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat9</a>
+                    <a href="/kichen" class= "categoriesItem">kichen items</a>
                 </li>
                 <li class="categoriesType">
-                    <a href="#cat" class= "categoriesItem">cat10</a>
+                    <a href="/sports" class= "categoriesItem">sports, fitness products</a>
                 </li>
             </div>
         </aside>
         
         <!-- main section -->
-        <main class="mainContent">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/istockphoto-1315699311-170667a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/istockphoto-1325985224-170667a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/tablet-314153__340.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+</div>
+
+
+
+
+
+
+
+
+
+        {{!-- <main class="mainContent">
             <img src="images/banner.jpg" alt="banner" id="banner"> 
-        </main>
+        </main> --}}
     </main>
     {{>footer}}
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

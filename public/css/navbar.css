@@ -7,13 +7,18 @@
 }
 
 #navUser{
-    background-color: rgb(119, 117, 114);
-    border: 2px solid white;
+    display: inline-block;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 5px 5px 10px 4px grey;
     border-radius: 50%;
-    color: brown;
+    color: rgb(52, 40, 219);
     padding: 5px;
+    width: 40px;
+    height: 40px;
     font-size: larger;
     font-weight: bold;
+    position: relative;
+    left: -30px;
 }
 .navbar{
     background: black;
@@ -47,6 +52,7 @@
     -webkit-text-fill-color: transparent;
     font-size: 2rem;
     text-decoration: none;
+    text-align: center;
 }
 
 .navMenu{
@@ -95,7 +101,10 @@
     transition: all .3s ease-in-out;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
+    #navUser{
+        left: -40px;
+    }
     .navbar{
         width: 100vw;
     }
@@ -109,7 +118,7 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top: -1000px; 
+        top: -500px; 
         opacity: 1;
         transition: all 0.5s ease-in-out;
         z-index: -1;
@@ -147,6 +156,8 @@
     #mobileMenu{
         transform: translateY(5%,20%);
         cursor: pointer;
+        position: relative;
+        right: -5%;
     }
     #mobileMenu.is-active .bar:nth-child(2){
         opacity: 0;

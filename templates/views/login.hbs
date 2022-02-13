@@ -8,10 +8,11 @@
     <title>login</title>
 </head>
 <body>
-    <h1>
-        login page
-    </h1>
+    {{>navbar}}
     <div class="login_page">
+        <h1 class="head">
+            login page
+        </h1>
         <form action="/login" method="post" class="login">
             <li class="info">
                 <label for="email">Email</label>
@@ -22,9 +23,10 @@
                 <input type="password" name="password" id="password" required>
             </li>
             <li class="info">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="btn">
             </li>
         </form>
     </div>
+    {{>footer}}
 </body>
 </html>

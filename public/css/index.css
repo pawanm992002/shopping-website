@@ -1,8 +1,17 @@
 /* main container  */
+
 .mainContainer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+}
+#carouselExampleIndicators{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+
 }
 
 /* aside section */
@@ -13,6 +22,7 @@
     margin: 5px auto;
     padding: 5px;
     background: rgb(131, 103, 131);
+    border-radius: 10px;
 }
 .categories{
     width: 100%;
@@ -39,10 +49,11 @@ body > main > aside > div > li:nth-child(1){
 }
 .categoriesItem{
     text-decoration: none;
-    color: blue
+    color: blue;
+    text-align: center;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:500px) {
     .aside{
         width: 100%;
     }
